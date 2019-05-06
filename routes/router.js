@@ -11,5 +11,11 @@ router.get("/users", users_controller.all_users);
 // create a new user
 router.get("/createUser", users_controller.create_user);
 
+router.get("/findUser", users_controller.find_user);
+
+router.get('/react', (req, res) => {
+    res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+});
+
 // exports router
 module.exports = router;

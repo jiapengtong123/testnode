@@ -1,7 +1,7 @@
 let faker = require('faker');
 let User = require("../models/users");
 // get db automatically use it
-let db = require("../models/db");
+// let db = require("../models/db");
 
 // get all users info
 module.exports.all_users = function (req, res) {
@@ -21,4 +21,12 @@ module.exports.create_user = function (req, res) {
     });
     // save in database
     new_user.save().then(res.send('create a new user! ' + fake_name));
+};
+
+module.exports.find_user = function (req, res) {
+
+    User.fuzzySearch('jo', function (err, users) {
+        console.error(err);
+        console.log(users); // each user object will not contain the fuzzy keys
+    });
 };

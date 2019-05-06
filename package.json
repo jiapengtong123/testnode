@@ -10,10 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "element-ui": "^2.7.2",
     "express": "^4.16.4",
     "express-generator": "^4.16.0",
     "faker": "^4.1.0",
     "mongoose": "^5.4.21",
-    "nodemon": "^1.18.10"
+    "mongoose-fuzzy-searching": "^1.0.4",
+    "nodemon": "^1.18.10",
+    "react-beautiful-dnd": "^11.0.2",
+    "vue": "^2.6.10"
   }
 }
