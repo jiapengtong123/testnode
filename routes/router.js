@@ -14,7 +14,7 @@ router.get("/createUser", users_controller.create_user);
 router.get("/findUser", users_controller.find_user);
 
 router.get('/react', (req, res) => {
-    res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+    res.sendFile('./client/public/index.html');
 });
 
 // exports router
